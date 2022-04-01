@@ -13,14 +13,14 @@
 		E0ECCA8A27F6EF2500BB2DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ECCA8827F6EF2500BB2DD0 /* Main.storyboard */; };
 		E0ECCA8C27F6EF2700BB2DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0ECCA8B27F6EF2700BB2DD0 /* Assets.xcassets */; };
 		E0ECCA8F27F6EF2700BB2DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ECCA8D27F6EF2700BB2DD0 /* LaunchScreen.storyboard */; };
-		E0ECCA9827F6EFA000BB2DD0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCA9727F6EFA000BB2DD0 /* FirebaseAnalytics */; };
-		E0ECCA9A27F6EFA000BB2DD0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCA9927F6EFA000BB2DD0 /* FirebaseCrashlytics */; };
-		E0ECCAB127F6F03300BB2DD0 /* HelperPackage in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCAB027F6F03300BB2DD0 /* HelperPackage */; };
-		E0ECCAB327F6F03300BB2DD0 /* HelperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */; };
-		E0ECCAB427F6F03300BB2DD0 /* HelperFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0ECCABE27F6F09400BB2DD0 /* shared.h in Headers */ = {isa = PBXBuildFile; fileRef = E0ECCABD27F6F09400BB2DD0 /* shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0ECCAC127F6F09400BB2DD0 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCABB27F6F09400BB2DD0 /* shared.framework */; };
 		E0ECCAC227F6F09400BB2DD0 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCABB27F6F09400BB2DD0 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0ECCAC727F6F0B300BB2DD0 /* HelperPackage in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCAC627F6F0B300BB2DD0 /* HelperPackage */; };
+		E0ECCAC927F6F0B300BB2DD0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCAC827F6F0B300BB2DD0 /* FirebaseAnalytics */; };
+		E0ECCACB27F6F0B300BB2DD0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCACA27F6F0B300BB2DD0 /* FirebaseCrashlytics */; };
+		E0ECCACD27F6F0B300BB2DD0 /* HelperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCACC27F6F0B300BB2DD0 /* HelperFramework.framework */; };
+		E0ECCACE27F6F0B300BB2DD0 /* HelperFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCACC27F6F0B300BB2DD0 /* HelperFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E0ECCAB427F6F03300BB2DD0 /* HelperFramework.framework in Embed Frameworks */,
 				E0ECCAC227F6F09400BB2DD0 /* shared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0ECCACF27F6F0B300BB2DD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0ECCACE27F6F0B300BB2DD0 /* HelperFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +70,7 @@
 		E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HelperFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0ECCABB27F6F09400BB2DD0 /* shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0ECCABD27F6F09400BB2DD0 /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		E0ECCACC27F6F0B300BB2DD0 /* HelperFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HelperFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +79,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0ECCAC127F6F09400BB2DD0 /* shared.framework in Frameworks */,
-				E0ECCA9827F6EFA000BB2DD0 /* FirebaseAnalytics in Frameworks */,
-				E0ECCAB127F6F03300BB2DD0 /* HelperPackage in Frameworks */,
-				E0ECCA9A27F6EFA000BB2DD0 /* FirebaseCrashlytics in Frameworks */,
-				E0ECCAB327F6F03300BB2DD0 /* HelperFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0ECCACB27F6F0B300BB2DD0 /* FirebaseCrashlytics in Frameworks */,
+				E0ECCAC927F6F0B300BB2DD0 /* FirebaseAnalytics in Frameworks */,
+				E0ECCAC727F6F0B300BB2DD0 /* HelperPackage in Frameworks */,
+				E0ECCACD27F6F0B300BB2DD0 /* HelperFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +132,7 @@
 		E0ECCAAF27F6F03300BB2DD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0ECCACC27F6F0B300BB2DD0 /* HelperFramework.framework */,
 				E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */,
 			);
 			name = Frameworks;
@@ -164,9 +176,6 @@
 			);
 			name = App;
 			packageProductDependencies = (
-				E0ECCA9727F6EFA000BB2DD0 /* FirebaseAnalytics */,
-				E0ECCA9927F6EFA000BB2DD0 /* FirebaseCrashlytics */,
-				E0ECCAB027F6F03300BB2DD0 /* HelperPackage */,
 			);
 			productName = App;
 			productReference = E0ECCA7F27F6EF2500BB2DD0 /* App.app */;
@@ -180,12 +189,18 @@
 				E0ECCAB727F6F09400BB2DD0 /* Sources */,
 				E0ECCAB827F6F09400BB2DD0 /* Frameworks */,
 				E0ECCAB927F6F09400BB2DD0 /* Resources */,
+				E0ECCACF27F6F0B300BB2DD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = shared;
+			packageProductDependencies = (
+				E0ECCAC627F6F0B300BB2DD0 /* HelperPackage */,
+				E0ECCAC827F6F0B300BB2DD0 /* FirebaseAnalytics */,
+				E0ECCACA27F6F0B300BB2DD0 /* FirebaseCrashlytics */,
+			);
 			productName = shared;
 			productReference = E0ECCABB27F6F09400BB2DD0 /* shared.framework */;
 			productType = "com.apple.product-type.framework";
@@ -572,19 +587,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E0ECCA9727F6EFA000BB2DD0 /* FirebaseAnalytics */ = {
+		E0ECCAC627F6F0B300BB2DD0 /* HelperPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HelperPackage;
+		};
+		E0ECCAC827F6F0B300BB2DD0 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0ECCA9627F6EFA000BB2DD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		E0ECCA9927F6EFA000BB2DD0 /* FirebaseCrashlytics */ = {
+		E0ECCACA27F6F0B300BB2DD0 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E0ECCA9627F6EFA000BB2DD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
-		};
-		E0ECCAB027F6F03300BB2DD0 /* HelperPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = HelperPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
