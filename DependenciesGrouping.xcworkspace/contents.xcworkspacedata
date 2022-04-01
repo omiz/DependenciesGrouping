@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HelperPackage">
+   </FileRef>
+   <FileRef
+      location = "group:HelperFramework/HelperFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:App/App.xcodeproj">
    </FileRef>
 </Workspace>
