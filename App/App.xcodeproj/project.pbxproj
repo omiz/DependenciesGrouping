@@ -15,7 +15,24 @@
 		E0ECCA8F27F6EF2700BB2DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0ECCA8D27F6EF2700BB2DD0 /* LaunchScreen.storyboard */; };
 		E0ECCA9827F6EFA000BB2DD0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCA9727F6EFA000BB2DD0 /* FirebaseAnalytics */; };
 		E0ECCA9A27F6EFA000BB2DD0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCA9927F6EFA000BB2DD0 /* FirebaseCrashlytics */; };
+		E0ECCAB127F6F03300BB2DD0 /* HelperPackage in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECCAB027F6F03300BB2DD0 /* HelperPackage */; };
+		E0ECCAB327F6F03300BB2DD0 /* HelperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */; };
+		E0ECCAB427F6F03300BB2DD0 /* HelperFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0ECCAB527F6F03400BB2DD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0ECCAB427F6F03300BB2DD0 /* HelperFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E0ECCA7F27F6EF2500BB2DD0 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +43,7 @@
 		E0ECCA8B27F6EF2700BB2DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0ECCA8E27F6EF2700BB2DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0ECCA9027F6EF2700BB2DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HelperFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +52,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0ECCA9827F6EFA000BB2DD0 /* FirebaseAnalytics in Frameworks */,
+				E0ECCAB127F6F03300BB2DD0 /* HelperPackage in Frameworks */,
 				E0ECCA9A27F6EFA000BB2DD0 /* FirebaseCrashlytics in Frameworks */,
+				E0ECCAB327F6F03300BB2DD0 /* HelperFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +66,7 @@
 			children = (
 				E0ECCA8127F6EF2500BB2DD0 /* App */,
 				E0ECCA8027F6EF2500BB2DD0 /* Products */,
+				E0ECCAAF27F6F03300BB2DD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +92,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E0ECCAAF27F6F03300BB2DD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0ECCAB227F6F03300BB2DD0 /* HelperFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +110,7 @@
 				E0ECCA7B27F6EF2500BB2DD0 /* Sources */,
 				E0ECCA7C27F6EF2500BB2DD0 /* Frameworks */,
 				E0ECCA7D27F6EF2500BB2DD0 /* Resources */,
+				E0ECCAB527F6F03400BB2DD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,6 +120,7 @@
 			packageProductDependencies = (
 				E0ECCA9727F6EFA000BB2DD0 /* FirebaseAnalytics */,
 				E0ECCA9927F6EFA000BB2DD0 /* FirebaseCrashlytics */,
+				E0ECCAB027F6F03300BB2DD0 /* HelperPackage */,
 			);
 			productName = App;
 			productReference = E0ECCA7F27F6EF2500BB2DD0 /* App.app */;
@@ -391,6 +422,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E0ECCA9627F6EFA000BB2DD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		E0ECCAB027F6F03300BB2DD0 /* HelperPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HelperPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
